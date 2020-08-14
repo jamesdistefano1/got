@@ -28,12 +28,18 @@ class App extends React.Component {
 class PersonList extends React.Component{
 	render() {
 		const persons = this.props.persons.map(person =>
-			<Person key={person._links.self.href} person={persons}/>
+			<Person key={person._links.self.href} person={person}/>
 		);
 		return (
 			<table>
 				<tbody>
 					<tr>
+						<th>Name</th>
+						<th>Score</th>
+						<th>Name</th>
+						<th>Score</th>
+						<th>Name</th>
+						<th>Score</th>
 						<th>Name</th>
 						<th>Score</th>
 					</tr>
