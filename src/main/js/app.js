@@ -27,7 +27,7 @@ class App extends React.Component {
 
 class PersonList extends React.Component{
 	render() {
-		const persons = this.props.employees.map(person =>
+		const persons = this.props.persons.map(person =>
 			<Person key={person._links.self.href} person={persons}/>
 		);
 		return (
@@ -45,7 +45,7 @@ class PersonList extends React.Component{
 }
 
 
-class Employee extends React.Component{
+class Person extends React.Component{
 	render() {
 		return (
 			<tr>
